@@ -97,7 +97,7 @@ a {
 }
 
 .page {
-  width: min(1080px, calc(100% - 32px));
+  width: min(1180px, calc(100% - 32px));
   margin: 0 auto;
   padding: 38px 0 72px;
 }
@@ -231,6 +231,69 @@ h3 {
   margin-top: 16px;
 }
 
+.legal-layout {
+  display: grid;
+  grid-template-columns: 184px minmax(0, 1fr);
+  grid-template-areas: "languages document";
+  gap: 18px;
+  align-items: start;
+  margin-top: 16px;
+}
+
+.legal-layout .document {
+  grid-area: document;
+  min-width: 0;
+  margin-top: 0;
+}
+
+.language-nav {
+  display: flex;
+  gap: 8px;
+}
+
+.legal-language-nav {
+  grid-area: languages;
+  position: sticky;
+  top: 88px;
+  max-height: calc(100vh - 112px);
+  flex-direction: column;
+  overflow: auto;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: var(--shadow);
+}
+
+.language-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 7px 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.86);
+  color: var(--brand-ink);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 780;
+}
+
+.legal-language-nav a {
+  width: 100%;
+}
+
+.language-nav a:hover,
+.language-nav a:focus-visible {
+  border-color: rgba(47, 127, 117, 0.28);
+  background: var(--soft);
+  outline: none;
+}
+
+.document h1 {
+  font-size: clamp(28px, 3vw, 36px);
+}
+
 .notice {
   background: #fffaf0;
   border-color: #ead7a9;
@@ -259,6 +322,13 @@ h3 {
   margin-top: 32px;
   padding-top: 24px;
   border-top: 1px solid var(--line);
+  scroll-margin-top: 96px;
+}
+
+.language-block:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
 }
 
 .site-footer {
@@ -306,5 +376,28 @@ code {
 
   .grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 940px) {
+  .legal-layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "languages"
+      "document";
+  }
+
+  .legal-language-nav {
+    position: static;
+    max-height: none;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 10px;
+    box-shadow: none;
+  }
+
+  .legal-language-nav a {
+    width: auto;
+    white-space: nowrap;
   }
 }
