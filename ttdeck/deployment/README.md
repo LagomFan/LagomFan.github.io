@@ -19,5 +19,7 @@ TTDeck 不强制公网。服务器地址只需要满足一个条件：iPhone 能
 
 当前公开托管目标：
 
-- 手动教程入口：`https://raw.githubusercontent.com/LagomFan/LagomFan.github.io/main/ttdeck/deployment/manual-setup.md`
-- AI 配置文档：`https://raw.githubusercontent.com/LagomFan/LagomFan.github.io/main/ttdeck/deployment/ai-setup-guide.md`
+- 手动教程入口（浏览器）：`https://lagomfan.github.io/ttdeck/deployment/manual-setup.md`
+- 手动教程入口（Markdown 原文）：`https://raw.githubusercontent.com/LagomFan/LagomFan.github.io/main/ttdeck/deployment/manual-setup.md`
+- AI 配置文档（浏览器）：`https://lagomfan.github.io/ttdeck/deployment/ai-setup-guide.md`
+- AI 配置文档（Markdown 原文，推荐发给 AI）：`https://raw.githubusercontent.com/LagomFan/LagomFan.github.io/main/ttdeck/deployment/ai-setup-guide.md`
