@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TTDeck Datenschutzrichtlinie</title>
+  <style>
+    body {
+      color: #111827;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      margin: 0 auto;
+      max-width: 920px;
+      padding: 40px 20px;
+    }
+    h1, h2 { line-height: 1.25; }
+    h2 { margin-top: 32px; }
+    table {
+      border-collapse: collapse;
+      margin: 16px 0;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #d1d5db;
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #f3f4f6; }
+    a { color: #0f766e; }
+    .site-nav {
+      border-bottom: 1px solid #e5e7eb;
+      margin-bottom: 28px;
+      padding-bottom: 16px;
+    }
+    .site-nav a { display: inline-block; margin: 0 12px 8px 0; }
+    .muted { color: #6b7280; }
+    .notice {
+      background: #f8fafc;
+      border: 1px solid #dbe4ee;
+      border-radius: 8px;
+      padding: 14px 16px;
+    }
+  </style>
+  <link rel="alternate" hreflang="zh-Hans" href="../zh-Hans/privacy-policy.html">
+  <link rel="alternate" hreflang="zh-Hant" href="../zh-Hant/privacy-policy.html">
+  <link rel="alternate" hreflang="ja" href="../ja/privacy-policy.html">
+  <link rel="alternate" hreflang="ko" href="../ko/privacy-policy.html">
+  <link rel="alternate" hreflang="en-US" href="../en-US/privacy-policy.html">
+  <link rel="alternate" hreflang="en-GB" href="../en-GB/privacy-policy.html">
+  <link rel="alternate" hreflang="es" href="../es/privacy-policy.html">
+  <link rel="alternate" hreflang="it" href="../it/privacy-policy.html">
+  <link rel="alternate" hreflang="fr" href="../fr/privacy-policy.html">
+  <link rel="alternate" hreflang="de" href="../de/privacy-policy.html">
+</head>
+<body>
+  <div class="site-nav">
+    <div>
+      <a href="../index.html">Legal Home</a>
+      <a href="./terms-of-use.html">Terms of Use</a>
+    </div>
+    <div>
+        <a href="../zh-Hans/privacy-policy.html" hreflang="zh-Hans">简体中文</a>
+        <a href="../zh-Hant/privacy-policy.html" hreflang="zh-Hant">繁體中文</a>
+        <a href="../ja/privacy-policy.html" hreflang="ja">日本語</a>
+        <a href="../ko/privacy-policy.html" hreflang="ko">한국어</a>
+        <a href="../en-US/privacy-policy.html" hreflang="en-US">English (US)</a>
+        <a href="../en-GB/privacy-policy.html" hreflang="en-GB">English (UK)</a>
+        <a href="../es/privacy-policy.html" hreflang="es">Español</a>
+        <a href="../it/privacy-policy.html" hreflang="it">Italiano</a>
+        <a href="../fr/privacy-policy.html" hreflang="fr">Français</a>
+        <a href="../de/privacy-policy.html" hreflang="de">Deutsch</a>
+    </div>
+  </div>
+  <h1>TTDeck Datenschutzrichtlinie</h1>
+  <p class="muted">Gültig ab: 2026-06-30</p>
+  <p class="notice">TTDeck ist eine schreibgeschützte App zur Fahrzeugüberwachung. Sie ist kein offizielles Tesla-Produkt, steuert keine Fahrzeuge und ist dafür ausgelegt, sich mit einem vom Nutzer konfigurierten Companion Server zu verbinden.</p>
+  <h2>1. Wer wir sind</h2>
+  <p>TTDeck wird von <strong>Fan Chentao</strong> bereitgestellt. Sie erreichen uns unter <a href="mailto:xxxkkk0101@foxmail.com">xxxkkk0101@foxmail.com</a>.</p>
+
+  <h2>2. Zusammenfassung</h2>
+  <p>Die aktuelle Version von TTDeck enthält keine Werbe-SDKs, keine Analyse-SDKs Dritter und kein appübergreifendes Tracking. Die App speichert Verbindungseinstellungen auf Ihrem Gerät und verwendet ein schreibgeschütztes Token, um Fahrzeugzusammenfassungen von dem von Ihnen konfigurierten Companion Server abzurufen. Fahrzeugdaten sollen in Ihrer TeslaMate-Installation, Ihrem Companion Server, Ihrem iPhone und der von Ihnen gewählten Infrastruktur verbleiben.</p>
+
+  <h2>3. Von der App verarbeitete Daten</h2>
+  <table>
+    <thead>
+      <tr><th>Daten</th><th>Zweck</th><th>Speicher- oder Übertragungsort</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Companion-Server-URL, Datenquellenmodus, ausgewähltes Fahrzeug, Benachrichtigungs- und Datenschutzanzeige-Einstellungen</td><td>App konfigurieren, angezeigte Daten auswählen und lokale Einstellungen speichern</td><td>Auf dem Gerät im iOS-App-Speicher; wenn iCloud-Einstellungssynchronisierung aktiviert ist, werden sie auch mit niedriger Frequenz über Apple iCloud Key-Value Storage in Ihrem iCloud-Konto synchronisiert</td></tr>
+      <tr><td>Schreibgeschütztes Companion-Token und Gerätegeheimnis</td><td>Dieses iPhone gegenüber Ihrem Companion Server authentifizieren</td><td>In iOS Keychain gespeichert und nur an die konfigurierte Companion-Server-URL gesendet</td></tr>
+      <tr><td>Setup-Geheimnis und einmaliges Kopplungstoken</td><td>Gerätebindung mit dem Companion Server erstellen oder abschließen</td><td>Von Ihnen eingegeben und an Ihren Companion Server gesendet. TTDeck speichert diese Daten nach der Setup-Aktion nicht absichtlich.</td></tr>
+      <tr><td>Fahrzeugstatus, Batterie, Laden, Sicherheit, Fahrten, Route, Standort, Telemetrie und Diagnosen</td><td>Schreibgeschützte Ansichten, Karten, Verlauf und lokale Benachrichtigungsprüfungen anzeigen</td><td>Von Ihrem Companion Server abgerufen und auf dem Gerät angezeigt. Die App ist nicht dafür ausgelegt, diese Daten an eine vom Entwickler betriebene Cloud zu senden.</td></tr>
+      <tr><td>Kamerabilder beim Scannen eines Kopplungs-QR-Codes</td><td>Kopplungs-QR-Code des Companion Servers scannen</td><td>Nur auf dem Gerät zur QR-Erkennung verarbeitet. TTDeck speichert diese Bilder nicht.</td></tr>
+      <tr><td>Support-Nachrichten, Screenshots, Protokolle oder Diagnosen, die Sie uns freiwillig senden</td><td>Support beantworten und Probleme diagnostizieren</td><td>Nur gesendet, wenn Sie sie bereitstellen. Entfernen Sie vor dem Senden Tokens, genaue Wohnadresse, VIN und andere sensible Daten.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>4. Companion Server und selbst gehostete Daten</h2>
+  <p>TTDeck hängt von einem von Ihnen konfigurierten Companion Server ab. Dieser Server kann TeslaMate, Postgres, MQTT, Tesla-Dienste, DNS- und Hosting-Anbieter lesen, die Sie auswählen. Wir kontrollieren diese Dienste nicht, sofern wir nicht separat einen vom Entwickler betriebenen Hosting-Dienst bereitstellen und kennzeichnen. Ihre Nutzung dieser Dienste unterliegt deren Bedingungen und Richtlinien.</p>
+
+  <h2>5. Dritte</h2>
+  <p>TTDeck nutzt Apple-Plattformdienste wie App Store, iOS Keychain, lokale Benachrichtigungen, MapKit-Anzeige, Kamera-Berechtigungsdialoge und iCloud Key-Value Storage für niedrigfrequente Einstellungssynchronisierung. Für Daten, die Apple unabhängig über App Store oder iOS erhebt, sind wir nicht verantwortlich. Wenn diese Richtlinie auf GitHub Pages gehostet wird, kann GitHub Besucherinformationen wie IP-Adressen für Sicherheit und Betrieb verarbeiten.</p>
+
+  <h2>6. Tracking, Werbung und Verkauf von Daten</h2>
+  <p>TTDeck verkauft keine Nutzerdaten. Die aktuelle App verwendet keine Werbe-SDKs Dritter, kein appübergreifendes Tracking und keine Analyse-SDKs Dritter. Wenn wir künftig Analysen, Absturzberichte, Remote-Push, einen gehosteten Companion-Dienst oder Werbung hinzufügen, aktualisieren wir diese Richtlinie und die App-Store-Datenschutzangaben vor Veröffentlichung.</p>
+
+  <h2>7. Aufbewahrung und Löschung</h2>
+  <p>Lokale Einstellungen bleiben auf Ihrem Gerät, bis Sie sie ändern, die Bindung zurücksetzen oder die App löschen. Das Zurücksetzen in der App löscht das schreibgeschützte Token und das Gerätegeheimnis von diesem Gerät. Das serverseitige Widerrufen von Gerätezugriff, Löschen von TeslaMate-Daten, Companion-Server-Protokollen und Hosting-Infrastrukturdaten muss auf dem von Ihnen kontrollierten Server oder Dienst erfolgen.</p>
+  <p>Support-Nachrichten werden nur so lange aufbewahrt, wie es zur Antwort, Dokumentation oder Einhaltung rechtlicher Pflichten angemessen erforderlich ist. Löschanfragen senden Sie an <a href="mailto:xxxkkk0101@foxmail.com">xxxkkk0101@foxmail.com</a>.</p>
+
+  <h2>8. Ihre Wahlmöglichkeiten</h2>
+  <ul>
+    <li>Demomodus verwenden, statt einen Companion Server zu verbinden.</li>
+    <li>Companion-Server-URL und Token in der App ändern oder entfernen.</li>
+    <li>Datenschutzanzeige verwenden, um genauen Standort, Routenkarten, VIN-Endung, Ortslabels und Geräte-Token-Hashes auszublenden.</li>
+    <li>Lokale Benachrichtigungen in TTDeck oder iOS-Einstellungen deaktivieren.</li>
+    <li>Die Bindung dieses Geräts in den TTDeck-Einstellungen zurücksetzen.</li>
+    <li>Gerätezugriff im Companion Server widerrufen, sofern unterstützt.</li>
+  </ul>
+
+  <h2>9. Kinder</h2>
+  <p>TTDeck richtet sich nicht an Kinder und sollte von Kindern nicht zur Überwachung von Fahrzeug- oder Kontodaten verwendet werden.</p>
+
+  <h2>10. Sicherheit</h2>
+  <p>TTDeck verwendet iOS Keychain für das schreibgeschützte Token und Gerätegeheimnis. Sie sind für den Schutz von Companion Server, TeslaMate, Datenbank, Setup-Geheimnis, Hosting-Konto und Netzwerk verantwortlich. Teilen Sie keine Roh-Tokens, Geheimnisse, Tesla-Tokens, Datenbankpasswörter, VINs, exakten Wohnkoordinaten oder vollständigen Routendaten in öffentlichen Logs oder Supportkanälen.</p>
+
+  <h2>11. Internationale Nutzung</h2>
+  <p>Sie sind dafür verantwortlich, Ihren Companion Server und verbundene Dienste in Übereinstimmung mit den für Sie und Ihren Standort geltenden Gesetzen zu betreiben.</p>
+
+  <h2>12. Änderungen</h2>
+  <p>Wir können diese Richtlinie aktualisieren, wenn sich App, Datenpraktiken oder rechtliche Anforderungen ändern. Die aktualisierte Fassung wird unter dieser URL mit neuem Datum veröffentlicht.</p>
+
+  <h2>13. Kontakt</h2>
+  <p>Fragen, Datenschutzanfragen und Supportanfragen können an <a href="mailto:xxxkkk0101@foxmail.com">xxxkkk0101@foxmail.com</a> gesendet werden.</p>
+</body>
+</html>

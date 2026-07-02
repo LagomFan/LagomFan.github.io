@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TTDeck Privacy Policy</title>
+  <style>
+    body {
+      color: #111827;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      margin: 0 auto;
+      max-width: 920px;
+      padding: 40px 20px;
+    }
+    h1, h2 { line-height: 1.25; }
+    h2 { margin-top: 32px; }
+    table {
+      border-collapse: collapse;
+      margin: 16px 0;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #d1d5db;
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #f3f4f6; }
+    a { color: #0f766e; }
+    .site-nav {
+      border-bottom: 1px solid #e5e7eb;
+      margin-bottom: 28px;
+      padding-bottom: 16px;
+    }
+    .site-nav a { display: inline-block; margin: 0 12px 8px 0; }
+    .muted { color: #6b7280; }
+    .notice {
+      background: #f8fafc;
+      border: 1px solid #dbe4ee;
+      border-radius: 8px;
+      padding: 14px 16px;
+    }
+  </style>
+  <link rel="alternate" hreflang="zh-Hans" href="../zh-Hans/privacy-policy.html">
+  <link rel="alternate" hreflang="zh-Hant" href="../zh-Hant/privacy-policy.html">
+  <link rel="alternate" hreflang="ja" href="../ja/privacy-policy.html">
+  <link rel="alternate" hreflang="ko" href="../ko/privacy-policy.html">
+  <link rel="alternate" hreflang="en-US" href="../en-US/privacy-policy.html">
+  <link rel="alternate" hreflang="en-GB" href="../en-GB/privacy-policy.html">
+  <link rel="alternate" hreflang="es" href="../es/privacy-policy.html">
+  <link rel="alternate" hreflang="it" href="../it/privacy-policy.html">
+  <link rel="alternate" hreflang="fr" href="../fr/privacy-policy.html">
+  <link rel="alternate" hreflang="de" href="../de/privacy-policy.html">
+</head>
+<body>
+  <div class="site-nav">
+    <div>
+      <a href="../index.html">Legal Home</a>
+      <a href="./terms-of-use.html">Terms of Use</a>
+    </div>
+    <div>
+        <a href="../zh-Hans/privacy-policy.html" hreflang="zh-Hans">简体中文</a>
+        <a href="../zh-Hant/privacy-policy.html" hreflang="zh-Hant">繁體中文</a>
+        <a href="../ja/privacy-policy.html" hreflang="ja">日本語</a>
+        <a href="../ko/privacy-policy.html" hreflang="ko">한국어</a>
+        <a href="../en-US/privacy-policy.html" hreflang="en-US">English (US)</a>
+        <a href="../en-GB/privacy-policy.html" hreflang="en-GB">English (UK)</a>
+        <a href="../es/privacy-policy.html" hreflang="es">Español</a>
+        <a href="../it/privacy-policy.html" hreflang="it">Italiano</a>
+        <a href="../fr/privacy-policy.html" hreflang="fr">Français</a>
+        <a href="../de/privacy-policy.html" hreflang="de">Deutsch</a>
+    </div>
+  </div>
+  <h1>TTDeck Privacy Policy</h1>
+  <p class="muted">Effective date: 2026-06-30</p>
+  <p class="notice">TTDeck is a read-only vehicle monitoring app. It is not an official Tesla product, does not control vehicles, and is designed to connect to a Companion Server configured by the user.</p>
+  <h2>1. Who We Are</h2>
+  <p>TTDeck is provided by <strong>Fan Chentao</strong> ("we", "us", or "our"). You can contact us at <a href="mailto:xxxkkk0101@foxmail.com">xxxkkk0101@foxmail.com</a>.</p>
+
+  <h2>2. Summary</h2>
+  <p>The current TTDeck app does not include advertising SDKs, third-party analytics SDKs, or cross-app tracking. The app stores connection settings on your device and uses a read-only token to request vehicle summaries from the Companion Server that you configure. Vehicle data is intended to remain in your TeslaMate installation, your Companion Server, your iPhone, and any infrastructure you choose to operate.</p>
+
+  <h2>3. Data Processed by the App</h2>
+  <table>
+    <thead>
+      <tr><th>Data</th><th>Purpose</th><th>Where it is stored or sent</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Companion Server URL, data source mode, selected vehicle, notification preferences, privacy display preferences</td><td>Configure the app, choose what data to display, and remember local preferences</td><td>Stored on your device using iOS app storage; if iCloud settings sync is enabled, also synced at low frequency through Apple iCloud Key-Value Storage under your iCloud account</td></tr>
+      <tr><td>Read-only Companion token and device secret</td><td>Authenticate this iPhone to your Companion Server</td><td>Stored in iOS Keychain and sent only to the Companion Server URL you configure</td></tr>
+      <tr><td>Setup secret and one-time pairing token</td><td>Create or complete device binding with your Companion Server</td><td>The setup secret is entered by you and sent to your configured Companion Server for setup actions. TTDeck does not intentionally store it after the setup action.</td></tr>
+      <tr><td>Vehicle status, battery, charging, safety, trip, route, location, telemetry, and diagnostic summaries</td><td>Display read-only monitoring screens, route maps, history, and local notification checks</td><td>Requested from your configured Companion Server. Displayed on your device. The app is not designed to send this data to a developer-operated cloud.</td></tr>
+      <tr><td>Camera frames while scanning a pairing QR code</td><td>Scan a Companion Server pairing QR code</td><td>Processed on device for QR scanning. Camera frames are not saved by TTDeck.</td></tr>
+      <tr><td>Optional support messages, screenshots, logs, or diagnostics you send to us</td><td>Respond to support requests and diagnose issues</td><td>Sent only when you choose to provide them. Please remove tokens, exact home locations, VINs, and other sensitive details before sending support material.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>4. Companion Server and Self-Hosted Data</h2>
+  <p>TTDeck depends on a Companion Server configured by you. That Companion Server may read from TeslaMate, Postgres, MQTT, Tesla services, DNS providers, and hosting providers selected by you. We do not control those services unless we separately provide and identify a developer-operated hosted service. Your use of those services is governed by their own terms and privacy policies.</p>
+
+  <h2>5. Third Parties</h2>
+  <p>TTDeck uses Apple platform services such as the App Store, iOS Keychain, local notifications, MapKit display, camera permission prompts, and iCloud Key-Value Storage for low-frequency settings sync. We are not responsible for data Apple collects independently through the App Store or iOS. If this policy is hosted on GitHub Pages, GitHub may process visitor information such as IP addresses for security and site operation.</p>
+
+  <h2>6. Tracking, Advertising, and Sale of Data</h2>
+  <p>TTDeck does not sell user data. The current app does not use third-party advertising SDKs, cross-app tracking, or third-party analytics SDKs. If we add analytics, crash reporting, remote push notifications, a hosted Companion service, or advertising in the future, we will update this policy and the App Store privacy information before releasing that version.</p>
+
+  <h2>7. Retention and Deletion</h2>
+  <p>Local app settings remain on your device until you change them, reset the app binding, or delete the app. The in-app reset action clears the read-only token and device secret from this device. Revoking server-side device access, deleting TeslaMate data, deleting Companion Server logs, and deleting hosted infrastructure data must be done on the server or service you control.</p>
+  <p>Support messages are kept only as long as reasonably needed to respond to your request, maintain records, or comply with legal obligations. To request deletion of support data you sent to us, contact <a href="mailto:xxxkkk0101@foxmail.com">xxxkkk0101@foxmail.com</a>.</p>
+
+  <h2>8. Your Choices</h2>
+  <ul>
+    <li>Use demo mode instead of connecting a Companion Server.</li>
+    <li>Change or remove the Companion Server URL and token in the app.</li>
+    <li>Use the app's privacy display options to hide exact location, route maps, VIN suffixes, place labels, and device token hashes on screen.</li>
+    <li>Disable local notifications in TTDeck or in iOS Settings.</li>
+    <li>Reset this device's binding from TTDeck Settings.</li>
+    <li>Revoke server-side device access from your Companion Server, where supported.</li>
+  </ul>
+
+  <h2>9. Children</h2>
+  <p>TTDeck is not directed to children and should not be used by children to monitor vehicle or account data.</p>
+
+  <h2>10. Security</h2>
+  <p>TTDeck uses iOS Keychain for the read-only token and device secret. You are responsible for protecting your Companion Server, TeslaMate, database, setup secret, hosting account, and network configuration. Do not share raw tokens, setup secrets, Tesla tokens, database passwords, VINs, exact home coordinates, or full route payloads in public logs or support channels.</p>
+
+  <h2>11. International Use</h2>
+  <p>You are responsible for operating your Companion Server and connected services in compliance with laws that apply to you and your location.</p>
+
+  <h2>12. Changes</h2>
+  <p>We may update this policy when the app, data practices, or legal requirements change. The updated policy will be posted at this URL with a new effective date.</p>
+
+  <h2>13. Contact</h2>
+  <p>Questions, privacy requests, and support requests can be sent to <a href="mailto:xxxkkk0101@foxmail.com">xxxkkk0101@foxmail.com</a>.</p>
+</body>
+</html>

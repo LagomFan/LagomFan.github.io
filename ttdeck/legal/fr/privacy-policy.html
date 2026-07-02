@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Politique de confidentialité de TTDeck</title>
+  <style>
+    body {
+      color: #111827;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      margin: 0 auto;
+      max-width: 920px;
+      padding: 40px 20px;
+    }
+    h1, h2 { line-height: 1.25; }
+    h2 { margin-top: 32px; }
+    table {
+      border-collapse: collapse;
+      margin: 16px 0;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #d1d5db;
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #f3f4f6; }
+    a { color: #0f766e; }
+    .site-nav {
+      border-bottom: 1px solid #e5e7eb;
+      margin-bottom: 28px;
+      padding-bottom: 16px;
+    }
+    .site-nav a { display: inline-block; margin: 0 12px 8px 0; }
+    .muted { color: #6b7280; }
+    .notice {
+      background: #f8fafc;
+      border: 1px solid #dbe4ee;
+      border-radius: 8px;
+      padding: 14px 16px;
+    }
+  </style>
+  <link rel="alternate" hreflang="zh-Hans" href="../zh-Hans/privacy-policy.html">
+  <link rel="alternate" hreflang="zh-Hant" href="../zh-Hant/privacy-policy.html">
+  <link rel="alternate" hreflang="ja" href="../ja/privacy-policy.html">
+  <link rel="alternate" hreflang="ko" href="../ko/privacy-policy.html">
+  <link rel="alternate" hreflang="en-US" href="../en-US/privacy-policy.html">
+  <link rel="alternate" hreflang="en-GB" href="../en-GB/privacy-policy.html">
+  <link rel="alternate" hreflang="es" href="../es/privacy-policy.html">
+  <link rel="alternate" hreflang="it" href="../it/privacy-policy.html">
+  <link rel="alternate" hreflang="fr" href="../fr/privacy-policy.html">
+  <link rel="alternate" hreflang="de" href="../de/privacy-policy.html">
+</head>
+<body>
+  <div class="site-nav">
+    <div>
+      <a href="../index.html">Legal Home</a>
+      <a href="./terms-of-use.html">Terms of Use</a>
+    </div>
+    <div>
+        <a href="../zh-Hans/privacy-policy.html" hreflang="zh-Hans">简体中文</a>
+        <a href="../zh-Hant/privacy-policy.html" hreflang="zh-Hant">繁體中文</a>
+        <a href="../ja/privacy-policy.html" hreflang="ja">日本語</a>
+        <a href="../ko/privacy-policy.html" hreflang="ko">한국어</a>
+        <a href="../en-US/privacy-policy.html" hreflang="en-US">English (US)</a>
+        <a href="../en-GB/privacy-policy.html" hreflang="en-GB">English (UK)</a>
+        <a href="../es/privacy-policy.html" hreflang="es">Español</a>
+        <a href="../it/privacy-policy.html" hreflang="it">Italiano</a>
+        <a href="../fr/privacy-policy.html" hreflang="fr">Français</a>
+        <a href="../de/privacy-policy.html" hreflang="de">Deutsch</a>
+    </div>
+  </div>
+  <h1>Politique de confidentialité de TTDeck</h1>
+  <p class="muted">Date d'entrée en vigueur : 2026-06-30</p>
+  <p class="notice">TTDeck est une app de surveillance de véhicule en lecture seule. Ce n'est pas un produit officiel Tesla, elle ne contrôle pas le véhicule et elle est conçue pour se connecter à un Companion Server configuré par l'utilisateur.</p>
+  <h2>1. Qui sommes-nous</h2>
+  <p>TTDeck est fournie par <strong>Fan Chentao</strong>. Vous pouvez nous contacter à <a href="mailto:xxxkkk0101@foxmail.com">xxxkkk0101@foxmail.com</a>.</p>
+
+  <h2>2. Résumé</h2>
+  <p>La version actuelle de TTDeck n'inclut pas de SDK publicitaire, de SDK d'analyse tiers ni de suivi entre apps. L'app enregistre les paramètres de connexion sur votre appareil et utilise un jeton en lecture seule pour demander des résumés du véhicule au Companion Server que vous configurez. Les données du véhicule sont destinées à rester dans votre TeslaMate, votre Companion Server, votre iPhone et l'infrastructure que vous choisissez d'exploiter.</p>
+
+  <h2>3. Données traitées par l'app</h2>
+  <table>
+    <thead>
+      <tr><th>Données</th><th>Finalité</th><th>Lieu de stockage ou d'envoi</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>URL du Companion Server, mode de source de données, véhicule sélectionné, préférences de notifications et d'affichage de confidentialité</td><td>Configurer l'app, choisir les données à afficher et mémoriser les préférences locales</td><td>Stockées sur votre appareil via le stockage iOS; si la synchronisation des réglages iCloud est activée, elles sont aussi synchronisées à basse fréquence via Apple iCloud Key-Value Storage dans votre compte iCloud</td></tr>
+      <tr><td>Jeton Companion en lecture seule et secret d'appareil</td><td>Authentifier cet iPhone auprès de votre Companion Server</td><td>Stockés dans iOS Keychain et envoyés uniquement à l'URL du Companion Server que vous configurez</td></tr>
+      <tr><td>Secret de configuration et jeton d'appairage à usage unique</td><td>Créer ou terminer l'association de l'appareil avec votre Companion Server</td><td>Saisis par vous et envoyés à votre Companion Server. TTDeck ne les conserve pas intentionnellement après l'action de configuration.</td></tr>
+      <tr><td>État du véhicule, batterie, charge, sécurité, trajets, itinéraires, position, télémétrie et résumés de diagnostic</td><td>Afficher les écrans de surveillance, cartes, historique et vérifications de notifications locales</td><td>Demandés à votre Companion Server et affichés sur l'appareil. L'app n'est pas conçue pour les envoyer vers un cloud exploité par le développeur.</td></tr>
+      <tr><td>Images caméra lors du scan d'un QR d'appairage</td><td>Scanner le QR code d'appairage du Companion Server</td><td>Traitées sur l'appareil pour la reconnaissance QR. TTDeck ne les enregistre pas.</td></tr>
+      <tr><td>Messages de support, captures d'écran, journaux ou diagnostics que vous choisissez de nous envoyer</td><td>Répondre au support et diagnostiquer les problèmes</td><td>Envoyés uniquement si vous les fournissez. Supprimez les jetons, l'adresse exacte du domicile, le VIN et autres données sensibles avant l'envoi.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>4. Companion Server et données auto-hébergées</h2>
+  <p>TTDeck dépend d'un Companion Server configuré par vous. Ce serveur peut lire TeslaMate, Postgres, MQTT, les services Tesla, des fournisseurs DNS et des hébergeurs que vous choisissez. Nous ne contrôlons pas ces services sauf si nous fournissons et identifions séparément un service hébergé exploité par le développeur. Leur utilisation est régie par leurs propres conditions et politiques.</p>
+
+  <h2>5. Tiers</h2>
+  <p>TTDeck utilise des services de la plateforme Apple, comme l'App Store, iOS Keychain, les notifications locales, l'affichage MapKit, les autorisations caméra et iCloud Key-Value Storage pour la synchronisation basse fréquence des réglages. Nous ne sommes pas responsables des données qu'Apple collecte indépendamment via l'App Store ou iOS. Si cette politique est hébergée sur GitHub Pages, GitHub peut traiter des informations de visiteurs, comme les adresses IP, pour la sécurité et l'exploitation du site.</p>
+
+  <h2>6. Suivi, publicité et vente de données</h2>
+  <p>TTDeck ne vend pas les données des utilisateurs. L'app actuelle n'utilise pas de SDK publicitaire tiers, de suivi entre apps ni de SDK d'analyse tiers. Si nous ajoutons à l'avenir des analyses, des rapports de plantage, des notifications push distantes, un service Companion hébergé ou de la publicité, nous mettrons à jour cette politique et les informations de confidentialité de l'App Store avant de publier cette version.</p>
+
+  <h2>7. Conservation et suppression</h2>
+  <p>Les paramètres locaux restent sur votre appareil jusqu'à ce que vous les modifiiez, réinitialisiez l'association ou supprimiez l'app. La réinitialisation dans l'app efface de cet appareil le jeton en lecture seule et le secret d'appareil. La révocation côté serveur, la suppression des données TeslaMate, des journaux Companion Server et des données d'infrastructure hébergée doivent être effectuées sur le serveur ou service que vous contrôlez.</p>
+  <p>Les messages de support sont conservés uniquement pendant la durée raisonnablement nécessaire pour répondre, conserver des dossiers ou respecter des obligations légales. Pour demander leur suppression, contactez <a href="mailto:xxxkkk0101@foxmail.com">xxxkkk0101@foxmail.com</a>.</p>
+
+  <h2>8. Vos choix</h2>
+  <ul>
+    <li>Utiliser le mode démo au lieu de connecter un Companion Server.</li>
+    <li>Modifier ou supprimer dans l'app l'URL du Companion Server et le jeton.</li>
+    <li>Utiliser les options de confidentialité pour masquer la position exacte, les cartes d'itinéraire, le suffixe VIN, les libellés de lieux et les hachages de jetons d'appareil.</li>
+    <li>Désactiver les notifications locales dans TTDeck ou dans Réglages iOS.</li>
+    <li>Réinitialiser l'association de cet appareil depuis les réglages TTDeck.</li>
+    <li>Révoquer l'accès de l'appareil dans votre Companion Server, si cette option est prise en charge.</li>
+  </ul>
+
+  <h2>9. Enfants</h2>
+  <p>TTDeck ne s'adresse pas aux enfants et ne doit pas être utilisée par des enfants pour surveiller des données de véhicule ou de compte.</p>
+
+  <h2>10. Sécurité</h2>
+  <p>TTDeck utilise iOS Keychain pour le jeton en lecture seule et le secret d'appareil. Vous êtes responsable de la protection de votre Companion Server, TeslaMate, base de données, secret de configuration, compte d'hébergement et réseau. Ne partagez pas de jetons bruts, secrets, tokens Tesla, mots de passe de base de données, VIN, coordonnées exactes du domicile ou itinéraires complets dans des journaux publics ou des canaux de support.</p>
+
+  <h2>11. Utilisation internationale</h2>
+  <p>Vous êtes responsable de l'exploitation de votre Companion Server et des services connectés conformément aux lois qui s'appliquent à vous et à votre lieu d'utilisation.</p>
+
+  <h2>12. Modifications</h2>
+  <p>Nous pouvons mettre à jour cette politique lorsque l'app, les pratiques de données ou les exigences légales changent. La version mise à jour sera publiée à cette URL avec une nouvelle date d'entrée en vigueur.</p>
+
+  <h2>13. Contact</h2>
+  <p>Questions, demandes de confidentialité et support peuvent être envoyés à <a href="mailto:xxxkkk0101@foxmail.com">xxxkkk0101@foxmail.com</a>.</p>
+</body>
+</html>

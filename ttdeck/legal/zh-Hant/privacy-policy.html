@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TTDeck 隱私政策</title>
+  <style>
+    body {
+      color: #111827;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      margin: 0 auto;
+      max-width: 920px;
+      padding: 40px 20px;
+    }
+    h1, h2 { line-height: 1.25; }
+    h2 { margin-top: 32px; }
+    table {
+      border-collapse: collapse;
+      margin: 16px 0;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #d1d5db;
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #f3f4f6; }
+    a { color: #0f766e; }
+    .site-nav {
+      border-bottom: 1px solid #e5e7eb;
+      margin-bottom: 28px;
+      padding-bottom: 16px;
+    }
+    .site-nav a { display: inline-block; margin: 0 12px 8px 0; }
+    .muted { color: #6b7280; }
+    .notice {
+      background: #f8fafc;
+      border: 1px solid #dbe4ee;
+      border-radius: 8px;
+      padding: 14px 16px;
+    }
+  </style>
+  <link rel="alternate" hreflang="zh-Hans" href="../zh-Hans/privacy-policy.html">
+  <link rel="alternate" hreflang="zh-Hant" href="../zh-Hant/privacy-policy.html">
+  <link rel="alternate" hreflang="ja" href="../ja/privacy-policy.html">
+  <link rel="alternate" hreflang="ko" href="../ko/privacy-policy.html">
+  <link rel="alternate" hreflang="en-US" href="../en-US/privacy-policy.html">
+  <link rel="alternate" hreflang="en-GB" href="../en-GB/privacy-policy.html">
+  <link rel="alternate" hreflang="es" href="../es/privacy-policy.html">
+  <link rel="alternate" hreflang="it" href="../it/privacy-policy.html">
+  <link rel="alternate" hreflang="fr" href="../fr/privacy-policy.html">
+  <link rel="alternate" hreflang="de" href="../de/privacy-policy.html">
+</head>
+<body>
+  <div class="site-nav">
+    <div>
+      <a href="../index.html">Legal Home</a>
+      <a href="./terms-of-use.html">Terms of Use</a>
+    </div>
+    <div>
+        <a href="../zh-Hans/privacy-policy.html" hreflang="zh-Hans">简体中文</a>
+        <a href="../zh-Hant/privacy-policy.html" hreflang="zh-Hant">繁體中文</a>
+        <a href="../ja/privacy-policy.html" hreflang="ja">日本語</a>
+        <a href="../ko/privacy-policy.html" hreflang="ko">한국어</a>
+        <a href="../en-US/privacy-policy.html" hreflang="en-US">English (US)</a>
+        <a href="../en-GB/privacy-policy.html" hreflang="en-GB">English (UK)</a>
+        <a href="../es/privacy-policy.html" hreflang="es">Español</a>
+        <a href="../it/privacy-policy.html" hreflang="it">Italiano</a>
+        <a href="../fr/privacy-policy.html" hreflang="fr">Français</a>
+        <a href="../de/privacy-policy.html" hreflang="de">Deutsch</a>
+    </div>
+  </div>
+  <h1>TTDeck 隱私政策</h1>
+  <p class="muted">生效日期：2026-06-30</p>
+  <p class="notice">TTDeck 是唯讀車輛監控 app。它不是 Tesla 官方產品，不控制車輛，並且設計上連接使用者自行設定的 Companion Server。</p>
+  <h2>1. 我們是誰</h2>
+  <p>TTDeck 由 <strong>范晨涛（Fan Chentao）</strong> 提供。如需聯絡，請寄送電子郵件至 <a href="mailto:xxxkkk0101@foxmail.com">xxxkkk0101@foxmail.com</a>。</p>
+
+  <h2>2. 摘要</h2>
+  <p>目前版本的 TTDeck 不包含廣告 SDK、第三方分析 SDK 或跨 app 追蹤。app 會在本機儲存連線設定，並使用唯讀權杖向你設定的 Companion Server 請求車輛摘要。車輛資料預期保留在你的 TeslaMate、你的 Companion Server、你的 iPhone，以及你自行選擇和控制的基礎設施中。</p>
+
+  <h2>3. app 處理的資料</h2>
+  <table>
+    <thead>
+      <tr><th>資料</th><th>用途</th><th>儲存或傳送位置</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Companion Server 位址、資料來源模式、目前車輛、通知偏好、隱私顯示偏好</td><td>設定 app、選擇顯示內容、記住本機偏好</td><td>儲存在本機 iOS app 儲存空間中；開啟 iCloud 設定同步時，也會透過 Apple iCloud 鍵值儲存低頻同步到你的 iCloud 帳號</td></tr>
+      <tr><td>唯讀 Companion 權杖和裝置密鑰</td><td>讓本機 iPhone 向你的 Companion Server 驗證</td><td>儲存在 iOS Keychain 中，並只傳送給你設定的 Companion Server 位址</td></tr>
+      <tr><td>設定密鑰和一次性配對權杖</td><td>建立或完成與 Companion Server 的裝置綁定</td><td>設定密鑰由你輸入，並傳送給你設定的 Companion Server 執行設定操作。TTDeck 不會有意在設定操作後儲存它。</td></tr>
+      <tr><td>車輛狀態、電池、充電、安全、行程、路線、位置、遙測和診斷摘要</td><td>顯示唯讀監控頁面、路線地圖、歷史記錄和本機通知檢查</td><td>從你設定的 Companion Server 請求，並在本機顯示。app 設計上不會把這些資料傳送到開發者營運的雲端服務。</td></tr>
+      <tr><td>掃描配對 QR code 時的相機畫面</td><td>掃描 Companion Server 配對 QR code</td><td>僅在本機用於 QR code 識別。TTDeck 不儲存相機畫面。</td></tr>
+      <tr><td>你主動傳送給我們的支援郵件、截圖、日誌或診斷資訊</td><td>回覆支援請求和排查問題</td><td>僅在你主動提供時傳送。傳送前請移除權杖、精確住家位置、VIN 和其他敏感資訊。</td></tr>
+    </tbody>
+  </table>
+
+  <h2>4. Companion Server 和自託管資料</h2>
+  <p>TTDeck 依賴你設定的 Companion Server。該伺服器可能讀取 TeslaMate、Postgres、MQTT、Tesla 服務、DNS 服務商和你選擇的託管服務。除非我們另行提供並明確標示開發者營運的託管服務，否則這些服務不由我們控制。你使用這些服務時也受其各自條款和隱私政策約束。</p>
+
+  <h2>5. 第三方</h2>
+  <p>TTDeck 使用 Apple 平台服務，例如 App Store、iOS Keychain、本機通知、MapKit 顯示、相機權限提示和用於低頻設定同步的 iCloud 鍵值儲存。Apple 透過 App Store 或 iOS 獨立收集的資料不由我們負責。如果本政策託管在 GitHub Pages，GitHub 可能為了安全和網站運作處理訪客 IP 位址等資訊。</p>
+
+  <h2>6. 追蹤、廣告和出售資料</h2>
+  <p>TTDeck 不出售使用者資料。目前 app 不使用第三方廣告 SDK、跨 app 追蹤或第三方分析 SDK。如果未來加入分析、崩潰報告、遠端推播、託管 Companion 服務或廣告，我們會在發布該版本前更新本政策和 App Store 隱私資訊。</p>
+
+  <h2>7. 保留和刪除</h2>
+  <p>本機設定會保留在裝置上，直到你修改、重置綁定或刪除 app。app 內的重置操作會清除本機唯讀權杖和裝置密鑰。撤銷伺服器端裝置存取、刪除 TeslaMate 資料、刪除 Companion Server 日誌和刪除託管基礎設施資料，需要在你控制的伺服器或服務中完成。</p>
+  <p>支援郵件會在回覆請求、保留記錄或履行法律義務所需的合理期限內保留。如需請求刪除你傳送給我們的支援資料，請聯絡 <a href="mailto:xxxkkk0101@foxmail.com">xxxkkk0101@foxmail.com</a>。</p>
+
+  <h2>8. 你的選擇</h2>
+  <ul>
+    <li>使用展示模式，不連接 Companion Server。</li>
+    <li>在 app 中修改或移除 Companion Server 位址和權杖。</li>
+    <li>使用 app 的隱私顯示選項，在螢幕上隱藏精確位置、路線地圖、VIN 後綴、地點標籤和裝置權杖雜湊。</li>
+    <li>在 TTDeck 或 iOS 系統設定中關閉本機通知。</li>
+    <li>在 TTDeck 設定中重置本機綁定。</li>
+    <li>在 Companion Server 支援的情況下，從伺服器端撤銷裝置存取。</li>
+  </ul>
+
+  <h2>9. 兒童</h2>
+  <p>TTDeck 不面向兒童，也不應由兒童用於監控車輛或帳號資料。</p>
+
+  <h2>10. 安全</h2>
+  <p>TTDeck 使用 iOS Keychain 保存唯讀權杖和裝置密鑰。你需要自行保護 Companion Server、TeslaMate、資料庫、設定密鑰、託管帳號和網路設定。不要在公開日誌或支援渠道中分享原始權杖、設定密鑰、Tesla token、資料庫密碼、VIN、精確住家座標或完整路線資料。</p>
+
+  <h2>11. 國際使用</h2>
+  <p>你需要負責按適用於你和所在地的法律運行 Companion Server 和相關服務。</p>
+
+  <h2>12. 變更</h2>
+  <p>當 app、資料實務或法律要求變化時，我們可能更新本政策。更新後的政策會發布在本 URL，並標示新的生效日期。</p>
+
+  <h2>13. 聯絡方式</h2>
+  <p>隱私問題、隱私請求和支援請求可傳送至 <a href="mailto:xxxkkk0101@foxmail.com">xxxkkk0101@foxmail.com</a>。</p>
+</body>
+</html>

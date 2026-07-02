@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TTDeck 개인정보 처리방침</title>
+  <style>
+    body {
+      color: #111827;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      margin: 0 auto;
+      max-width: 920px;
+      padding: 40px 20px;
+    }
+    h1, h2 { line-height: 1.25; }
+    h2 { margin-top: 32px; }
+    table {
+      border-collapse: collapse;
+      margin: 16px 0;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #d1d5db;
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #f3f4f6; }
+    a { color: #0f766e; }
+    .site-nav {
+      border-bottom: 1px solid #e5e7eb;
+      margin-bottom: 28px;
+      padding-bottom: 16px;
+    }
+    .site-nav a { display: inline-block; margin: 0 12px 8px 0; }
+    .muted { color: #6b7280; }
+    .notice {
+      background: #f8fafc;
+      border: 1px solid #dbe4ee;
+      border-radius: 8px;
+      padding: 14px 16px;
+    }
+  </style>
+  <link rel="alternate" hreflang="zh-Hans" href="../zh-Hans/privacy-policy.html">
+  <link rel="alternate" hreflang="zh-Hant" href="../zh-Hant/privacy-policy.html">
+  <link rel="alternate" hreflang="ja" href="../ja/privacy-policy.html">
+  <link rel="alternate" hreflang="ko" href="../ko/privacy-policy.html">
+  <link rel="alternate" hreflang="en-US" href="../en-US/privacy-policy.html">
+  <link rel="alternate" hreflang="en-GB" href="../en-GB/privacy-policy.html">
+  <link rel="alternate" hreflang="es" href="../es/privacy-policy.html">
+  <link rel="alternate" hreflang="it" href="../it/privacy-policy.html">
+  <link rel="alternate" hreflang="fr" href="../fr/privacy-policy.html">
+  <link rel="alternate" hreflang="de" href="../de/privacy-policy.html">
+</head>
+<body>
+  <div class="site-nav">
+    <div>
+      <a href="../index.html">Legal Home</a>
+      <a href="./terms-of-use.html">Terms of Use</a>
+    </div>
+    <div>
+        <a href="../zh-Hans/privacy-policy.html" hreflang="zh-Hans">简体中文</a>
+        <a href="../zh-Hant/privacy-policy.html" hreflang="zh-Hant">繁體中文</a>
+        <a href="../ja/privacy-policy.html" hreflang="ja">日本語</a>
+        <a href="../ko/privacy-policy.html" hreflang="ko">한국어</a>
+        <a href="../en-US/privacy-policy.html" hreflang="en-US">English (US)</a>
+        <a href="../en-GB/privacy-policy.html" hreflang="en-GB">English (UK)</a>
+        <a href="../es/privacy-policy.html" hreflang="es">Español</a>
+        <a href="../it/privacy-policy.html" hreflang="it">Italiano</a>
+        <a href="../fr/privacy-policy.html" hreflang="fr">Français</a>
+        <a href="../de/privacy-policy.html" hreflang="de">Deutsch</a>
+    </div>
+  </div>
+  <h1>TTDeck 개인정보 처리방침</h1>
+  <p class="muted">시행일: 2026-06-30</p>
+  <p class="notice">TTDeck은 읽기 전용 차량 모니터링 앱입니다. Tesla 공식 제품이 아니며 차량을 제어하지 않고, 사용자가 설정한 Companion Server에 연결되도록 설계되었습니다.</p>
+  <h2>1. 제공자</h2>
+  <p>TTDeck은 <strong>Fan Chentao</strong>가 제공합니다. 문의는 <a href="mailto:xxxkkk0101@foxmail.com">xxxkkk0101@foxmail.com</a>로 보내 주세요.</p>
+
+  <h2>2. 요약</h2>
+  <p>현재 TTDeck 앱에는 광고 SDK, 제3자 분석 SDK 또는 앱 간 추적 SDK가 포함되어 있지 않습니다. 앱은 연결 설정을 기기에 저장하고 읽기 전용 토큰을 사용하여 사용자가 설정한 Companion Server에서 차량 요약을 요청합니다. 차량 데이터는 사용자의 TeslaMate, Companion Server, iPhone 및 사용자가 선택하고 관리하는 인프라에 남도록 설계되어 있습니다.</p>
+
+  <h2>3. 앱이 처리하는 데이터</h2>
+  <table>
+    <thead>
+      <tr><th>데이터</th><th>목적</th><th>저장 또는 전송 위치</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Companion Server URL, 데이터 소스 모드, 선택한 차량, 알림 설정, 개인정보 표시 설정</td><td>앱 설정, 표시 내용 선택, 로컬 설정 저장</td><td>iOS 앱 저장소에 저장됩니다. iCloud 설정 동기화를 켜면 Apple iCloud Key-Value Storage를 통해 사용자의 iCloud 계정에도 저빈도로 동기화됩니다</td></tr>
+      <tr><td>읽기 전용 Companion 토큰 및 기기 비밀값</td><td>이 iPhone을 Companion Server에 인증</td><td>iOS Keychain에 저장되며 사용자가 설정한 Companion Server URL로만 전송</td></tr>
+      <tr><td>설정 비밀값 및 일회용 페어링 토큰</td><td>Companion Server와 기기 바인딩 생성 또는 완료</td><td>사용자가 입력하여 설정한 Companion Server로 전송합니다. TTDeck은 설정 작업 후 의도적으로 저장하지 않습니다.</td></tr>
+      <tr><td>차량 상태, 배터리, 충전, 안전, 주행, 경로, 위치, 텔레메트리 및 진단 요약</td><td>읽기 전용 화면, 경로 지도, 기록 및 로컬 알림 확인 표시</td><td>설정한 Companion Server에서 요청하여 기기에 표시합니다. 개발자가 운영하는 클라우드로 전송하도록 설계되어 있지 않습니다.</td></tr>
+      <tr><td>페어링 QR 코드 스캔 중 카메라 프레임</td><td>Companion Server 페어링 QR 코드 스캔</td><td>기기 내 QR 인식에만 사용되며 TTDeck은 카메라 프레임을 저장하지 않습니다.</td></tr>
+      <tr><td>사용자가 자발적으로 보내는 지원 이메일, 스크린샷, 로그 또는 진단 정보</td><td>지원 요청 응답 및 문제 진단</td><td>사용자가 제공한 경우에만 전송됩니다. 전송 전에 토큰, 정확한 집 주소, VIN 및 기타 민감한 정보를 제거해 주세요.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>4. Companion Server 및 자체 호스팅 데이터</h2>
+  <p>TTDeck은 사용자가 설정한 Companion Server에 의존합니다. 해당 서버는 TeslaMate, Postgres, MQTT, Tesla 서비스, DNS 제공업체 및 사용자가 선택한 호스팅 서비스를 읽을 수 있습니다. 개발자가 운영하는 호스팅 서비스로 별도 제공하고 명시하지 않는 한, 이러한 서비스는 당사가 관리하지 않습니다. 각 서비스 사용에는 해당 약관과 개인정보 처리방침이 적용됩니다.</p>
+
+  <h2>5. 제3자</h2>
+  <p>TTDeck은 App Store, iOS Keychain, 로컬 알림, MapKit 표시, 카메라 권한 프롬프트 및 저빈도 설정 동기화에 사용하는 iCloud Key-Value Storage 등 Apple 플랫폼 서비스를 사용합니다. Apple이 App Store 또는 iOS를 통해 독립적으로 수집하는 데이터에 대해 당사는 책임지지 않습니다. 이 정책이 GitHub Pages에서 호스팅되는 경우 GitHub은 보안 및 사이트 운영을 위해 IP 주소 등의 정보를 처리할 수 있습니다.</p>
+
+  <h2>6. 추적, 광고 및 데이터 판매</h2>
+  <p>TTDeck은 사용자 데이터를 판매하지 않습니다. 현재 앱은 제3자 광고 SDK, 앱 간 추적 또는 제3자 분석 SDK를 사용하지 않습니다. 향후 분석, 충돌 보고, 원격 푸시 알림, 호스팅 Companion 서비스 또는 광고를 추가하는 경우 해당 버전을 출시하기 전에 본 정책과 App Store 개인정보 정보를 업데이트합니다.</p>
+
+  <h2>7. 보관 및 삭제</h2>
+  <p>로컬 앱 설정은 사용자가 변경하거나 바인딩을 재설정하거나 앱을 삭제할 때까지 기기에 남습니다. 앱 내 재설정은 이 기기의 읽기 전용 토큰과 기기 비밀값을 삭제합니다. 서버 측 기기 접근 취소, TeslaMate 데이터 삭제, Companion Server 로그 삭제 및 호스팅 인프라 데이터 삭제는 사용자가 관리하는 서버 또는 서비스에서 수행해야 합니다.</p>
+  <p>지원 정보는 요청 응답, 기록 유지 또는 법적 의무 이행에 합리적으로 필요한 기간 동안 보관됩니다. 삭제 요청은 <a href="mailto:xxxkkk0101@foxmail.com">xxxkkk0101@foxmail.com</a>로 보내 주세요.</p>
+
+  <h2>8. 사용자의 선택</h2>
+  <ul>
+    <li>Companion Server에 연결하지 않고 데모 모드를 사용합니다.</li>
+    <li>앱에서 Companion Server URL 및 토큰을 변경하거나 제거합니다.</li>
+    <li>개인정보 표시 옵션으로 정확한 위치, 경로 지도, VIN 접미사, 장소 라벨, 기기 토큰 해시를 화면에서 숨깁니다.</li>
+    <li>TTDeck 또는 iOS 설정에서 로컬 알림을 끕니다.</li>
+    <li>TTDeck 설정에서 이 기기의 바인딩을 재설정합니다.</li>
+    <li>Companion Server가 지원하는 경우 서버 측에서 기기 접근을 취소합니다.</li>
+  </ul>
+
+  <h2>9. 아동</h2>
+  <p>TTDeck은 아동을 대상으로 하지 않으며 아동이 차량 또는 계정 데이터를 모니터링하는 데 사용해서는 안 됩니다.</p>
+
+  <h2>10. 보안</h2>
+  <p>TTDeck은 읽기 전용 토큰과 기기 비밀값을 iOS Keychain에 저장합니다. Companion Server, TeslaMate, 데이터베이스, 설정 비밀값, 호스팅 계정 및 네트워크 설정 보호는 사용자의 책임입니다. 공개 로그나 지원 채널에서 원본 토큰, 설정 비밀값, Tesla token, 데이터베이스 비밀번호, VIN, 정확한 집 좌표 또는 전체 경로 데이터를 공유하지 마세요.</p>
+
+  <h2>11. 국제 사용</h2>
+  <p>Companion Server 및 관련 서비스를 사용자와 사용 지역에 적용되는 법률에 따라 운영할 책임은 사용자에게 있습니다.</p>
+
+  <h2>12. 변경</h2>
+  <p>앱, 데이터 관행 또는 법적 요구사항이 변경되면 본 정책을 업데이트할 수 있습니다. 업데이트된 정책은 새 시행일과 함께 이 URL에 게시됩니다.</p>
+
+  <h2>13. 연락처</h2>
+  <p>개인정보 관련 질문, 요청 및 지원 문의는 <a href="mailto:xxxkkk0101@foxmail.com">xxxkkk0101@foxmail.com</a>로 보내 주세요.</p>
+</body>
+</html>
